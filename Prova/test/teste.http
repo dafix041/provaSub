@@ -1,0 +1,16 @@
+@base_url = https://localhost:7048/api/aluno
+
+###
+POST {{base_url}}/cadastrar
+Content-Type: application/json 
+
+{
+    "Nome":"Vinicius",
+    "DataDeNascimento":"023231"
+}
+
+
+###
+GET {{base_url}}/listar
+
+###

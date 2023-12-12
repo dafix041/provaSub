@@ -1,0 +1,23 @@
+@base_url = https://localhost:7048/api/imc
+
+###
+POST {{base_url}}/cadastrar
+Content-Type: application/json 
+
+{
+    "Altura":1.66,
+    "Peso": 54.5,
+    "AlunoId":1
+}
+###
+GET {{base_url}}/listar
+
+###
+PATCH {{base_url}}/alterar/1
+Content-Type: application/json 
+
+{
+    "Peso":45.5,
+    "Altura":1.67,
+    "AlunoId":1
+}
